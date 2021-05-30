@@ -3,7 +3,7 @@
 <h1>Welcome to a list of all the customers!</h1>
     <ol>
         {% for customer in customers %}
-            <h2><li><a href='{{customer.id}}'>{{customer.first_name}}</li><h2>
+            <h2><li><a href='{{customer.id}}'>{{customer.first_name+customer.last_name}}</li><h2>
         {% endfor %}
     </ol>
 {% endblock %}
